@@ -49,6 +49,7 @@ header {
     font-size: 36px;
     line-height: 49px;
     width: 100%;
+    color: var(--game-title);
 }
 
 .back{
@@ -66,17 +67,18 @@ section{
     flex-wrap: wrap;
     flex-direction: column-reverse;
     text-align: center;
-}
-
-.player-com-tools img{
-    width: 65%;
-
-}
-
-.kotak-game{
     flex-direction: row;
-     transform: translateX(15%);
-        }
+    transform: translateX(20%);
+}
+.player-name {
+    font-size: 36px;
+}
+
+/* .kotak-game{
+    flex-direction: row;
+    transform: translateX(15%);
+        } */
+
 .used{
         display: flex;
         flex-direction: column;
@@ -87,6 +89,7 @@ section{
     width: 223px;
     height: 204px;
     }
+
 .player-com-tools img{
     width: 50%;
 
@@ -97,6 +100,7 @@ section{
     transform: translatey(350%)
 }
 
+/*
 .papan-hasil {
     margin: auto 50px;
     width: 300px
@@ -104,16 +108,9 @@ section{
 }
 
 .papan-hasil h1{
-    font-size: 144px;
-    color: var(--versus);
-    font-weight: 700;
-    font-size: 144px;
-    line-height: 196px;
-    text-align: center;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
+    font-size: 144px; */
     
-}
+
   
 .player{
     margin: auto 5% 0 0
@@ -123,19 +120,37 @@ section{
     margin: auto 0 0 5%;
 }
 
-.player-name {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 49px;
-    text-align: center;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: var(--name-player);
-}
+.player-tool:hover {
+    transform: rotate(20deg);
+    animation-name: buttonAnimate;
+    animation-duration: 1.5s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+}@keyframes buttonAnimate {
+    0% {transform: rotate(20deg);}25% {transform: rotate(10deg);}50% {transform: rotate(0deg);}65% {transform: rotate(-10deg);}85% {transform: rotate(-20deg);}100% {transform: rotate(10deg);}}
 
 button {
     background-color: Transparent;
     border-color: transparent;
     width: 30%;   
     height: 120px;
-}
+    }
+
+    .papan-hasil {
+        width: 296px;
+        height: 186px;
+        left: 589px;
+        top: 419px;
+        margin-top: 12em;
+
+    }
+    
+    .papan-hasil h1 {
+        
+        color: var(--versus);
+        font-weight: var(--bold);
+font-size: 144px;
+text-align: center;
+text-transform: uppercase;
+
+    }
