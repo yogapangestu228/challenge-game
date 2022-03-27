@@ -120,6 +120,11 @@ section{
     margin: auto 0 0 5%;
 }
 
+.player-tool{
+    cursor: pointer;
+
+}
+
 .player-tool:hover {
     transform: rotate(20deg);
     animation-name: buttonAnimate;
@@ -149,8 +154,44 @@ button {
         
         color: var(--versus);
         font-weight: var(--bold);
-font-size: 144px;
-text-align: center;
-text-transform: uppercase;
+        font-size: 144px;
+        text-align: center;
+        text-transform: uppercase;
 
+    }
+
+    .pilih {
+        background-color: var(--playing);
+        border-radius: 30px;
+        
+    }
+   
+    
+    .boxMenang {
+        height: 100px;
+        display: grid;
+        place-items: center;
+        background: var(--bg-result);
+        border-radius: 10px;
+        margin:  15px auto;
+        padding: 15px;
+        transform: rotate(-30.98deg);
+        margin-top: 10em;
+
+        
+    }
+    
+    .boxSeri {
+        height: 100px;
+        display: grid;
+        place-items: center;
+        border-radius: 10px;
+        margin:  15px auto;
+        padding: 15px;
+        background: var(--bg-result-draw);
+        border-radius: 10px;
+        transform: rotate(-30.98deg);
+        margin-top: 10em;
+
+        
     }
